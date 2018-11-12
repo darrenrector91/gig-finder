@@ -13,9 +13,9 @@
     <li>Start database server</li>
     <li>Spin up Postico</li>
     <li>Create new database</li>
-    <li>Create table using jobs.sql file</li>
+    <li>Create table using <code>jobs.sql</code> file</li>
     <li>Open IDE</li>
-    <li>npm start in terminal or npm install nodemon --save-dev to auto save all file updates and reatart server</li>
+    <li>type <code>npm start</code> or <code>nodemon</code> in terminal to run on browser</li>
 </ol>
 
 ## Technologies
