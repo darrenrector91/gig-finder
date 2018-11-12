@@ -8,7 +8,8 @@
 
 <h2>Steps to launch app</h2>
 <ol>
-    <li>Using terminal npm install required dependencies</li>
+    <li>Using terminal type npm install --save for required dependencies</li>
+    <li>While in terminal also npm install nodemon --save-dev </li>
     <li>Start database server</li>
     <li>Spin up Postico</li>
     <li>Create new database</li>
@@ -26,6 +27,10 @@
 - ~~Bootstrap~~
 - Materializecss
 - Google Firebase
+
+## Useful links
+https://materializecss.com/
+https://console.firebase.google.com/
 
 
 
