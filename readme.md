@@ -1,4 +1,5 @@
-## Gig Finder
+## Gig Finder - 
+### This is setup for code review and is a separate environment from the development version
 
 <h2>Requirements to start using application</h2>
 <ol>
@@ -29,9 +30,9 @@
 - PostgreSQL
 
 ## Useful links
-https://materializecss.com/
-https://console.firebase.google.com/
-https://github.com/darrenrector91/gig-finder
+https://materializecss.com/ <br />
+https://console.firebase.google.com/ <br />
+https://github.com/darrenrector91/gig-finder <br />
 
 
 
