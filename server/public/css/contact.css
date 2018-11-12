@@ -1,0 +1,23 @@
+.addContactBtn {
+    top: 28px;
+    left: 780px;
+    width: 140px;
+    color: black !important;
+}
+
+.modal-title {
+    text-align: center;
+}
+
+placeholder {
+    color: black;
+}
+
+/* input[type=text]:not(.browser-default):focus:not([readonly])+label {
+    color: #1976d2 !important;
+    font-size: 20px;
+}
+
+.input-field .prefix.active {
+    color: #1976d2 !important;
+} */

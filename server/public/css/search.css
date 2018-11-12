@@ -1,0 +1,15 @@
+/* materialize */
+.jobSearch {
+    width: 680px;
+    position: relative;
+    top: 50px;
+    right: 360px;
+
+}
+
+.jobClearSearchBtn {
+    left: 10px;
+    top: 28px;
+    width: 140px;
+    color: black !important;
+}

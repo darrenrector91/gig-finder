@@ -1,0 +1,85 @@
+body {
+    background-color: #fff;
+}
+
+a.brand-logo {
+    left: 20px;
+}
+
+.nav-wrapper {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.title h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+.large-icon {
+    font-size: 50px !important;
+}
+
+/* .active {
+    border-bottom: 5px solid #f4511e;
+    margin: 2px;
+    bottom: 5px;
+
+} */
+
+nav ul li:hover {
+    background-color: #cfd8dc;
+    color: #01579b
+}
+
+nav ul a {
+    font-size: 1.5rem !important;
+}
+
+nav ul li>a:hover {
+    /* color: #f4511e; */
+    color: #01579b;
+    text-decoration: none;
+}
+
+hr {
+    width: 80%;
+    background-color: #01579b;
+}
+
+.copyright-wrapper {
+    position: absolute;
+    left: 510px;
+    width: 100%;
+    top: 870px;
+}
+
+nav .brand-logo:hover {
+    text-decoration: none;
+    opacity: .8;
+}
+
+#clearModalBtn {
+    color: #1976d2;
+}
+
+.addJobBtn {
+    top: 28px;
+    left: 780px;
+    width: 140px;
+    color: black !important;
+}
+
+.modalClose {
+    font-size: 40px !important;
+}
+
+progress {
+    width: 240px !important;
+    position: relative !important;
+    right: 100px !important;
+    top: 3px !important;
+}
+
+#myModalLabel {
+    text-align: center;
+}

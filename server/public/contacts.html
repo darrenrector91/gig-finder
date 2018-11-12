@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gig Finder - Contacts</title>
+
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <!-- Styling -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Questrial|Work+Sans|Material+Icons" " rel="
+        stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <!-- Bootstrap Datepicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+    <!-- Sweet Alerts -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="css/materialize.css">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-wrapper light-blue darken-4 navbar-fixed">
+            <a href="jobs.html" class="brand-logo"><i class="large-icon material-icons">search</i>Gig Finder</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="index.html" class="logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Header title -->
+    <header class="title">
+        <h1>Contacts</h1>
+    </header>
+    <hr>
+    <!-- Search -->
+    <div class="row jobSearch">
+        <form class="col s12">
+            <div class="row aboveTableRow">
+                <div class="input-field contactModalInput col s6">
+                    <i class="material-icons prefix">search</i>
+                    <input placeholder="Search" class="search-bar" id="search">
+                </div>
+                <button class="waves-effect waves-light btn jobClearSearchBtn functionBtn light-green accent-4">Clear
+                    Search</button>
+                <a class="waves-effect waves-light btn transparent modal-trigger addContactBtn" data-target="contactModal" style="border:2px solid #64dd17">Add Contact</a>
+            </div>
+        </form>
+    </div>
+    <!-- Contact table -->
+    <div id="table" class="row" style="overflow-x:auto;">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Company</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Notes</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tbody id="viewContacts"></tbody>
+            </tbody>
+        </table>
+    </div>
+    <!-- Contact Modal  -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class="material-icons modalClose" onclick="window.location.reload()">close</i></a>
+                <h4 class="modal-title" id="contactModalLabel">Add Contact</h4>
+            </div>
+            <div class="row">
+                <form class="col s12">
+                    <!-- Contact name -->
+                    <div class="row">
+                        <div class="input-field contactModalInput col s12">
+                            <input id="name" type="text" class="validate" placeholder="Name">
+                        </div>
+                    </div>
+                    <!-- Company name -->
+                    <div class="row">
+                        <div class="input-field contactModalInput col s12">
+                            <input id="company" type="text" class="validate" placeholder="Company">
+                        </div>
+                    </div>
+                    <!-- Position -->
+                    <div class="row">
+                        <div class="input-field contactModalInput col s12">
+                            <input id="position" type="text" class="validate" placeholder="Position">
+                        </div>
+                    </div>
+                    <!-- Email -->
+                    <div class="row">
+                        <div class="input-field contactModalInput col s12">
+                            <input id="email" type="email" class="validate" placeholder="Email">
+                        </div>
+                    </div>
+                    <!-- Phone -->
+                    <div class="row">
+                        <div class="input-field contactModalInput col s12">
+                            <input id="phone" type="text" class="validate" placeholder="Phone">
+                        </div>
+                    </div>
+                    <!-- Notes -->
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="input-field contactModalInput col s12">
+                                <textarea id="notes" name="textarea" class="materialize-textarea" placeholder="Notes"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </form>
+            </div>
+            <!-- Conatct modal buttons -->
+            <a class="waves-effect waves-light btn-large blue darken-2 modal-close" id="updateContact" onclick="window.location.reload()">Submit</a>
+
+            <a class="waves-effect waves-light btn-large white modal-close" id="clearModalBtn" style="border:2px solid #1976d2; font-weight: bold;" onclick="window.location.reload()">Cancel</a>
+        </div>
+    </div> <!-- end contact modal-->
+
+
+    <!-- ***********************
+    ***********SCRIPTS**********
+    **************************** -->
+
+    <!-- jQuery -->
+    <script src="
+                js/jquery.min.js"> </script> <!-- Fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js"></script>
+    <!-- Scripts -->
+    <script src="js/contacts.js"></script>
+    <!-- Bootstrap -->
+    <script src="vendors/bootstrap.min.js"></script>
+    <!-- Bootstrap Datepicker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <!-- Mobile Menu -->
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/materialize.js"></script>
+
+</body>
+
+</html>
