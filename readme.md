@@ -3,7 +3,6 @@
 <h2>Requirements to start using application</h2>
 <ol>
     <li>Google account or an email is necessary to login into application</li>
-    <li>In order to use application a Google Firebase account will need to be setup, this is used for Firebase Storage</li>
 </ol>
 
 <h2>Steps to launch app</h2>
@@ -24,7 +23,6 @@
 - jQuery
 - Node.js
 - Express.js
-- SQL
 - ~~Bootstrap~~
 - Materialize CSS
 - Google Firebase
