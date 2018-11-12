@@ -15,22 +15,25 @@
     <li>Create new database</li>
     <li>Create table using <code>jobs.sql</code> file</li>
     <li>Open IDE</li>
-    <li>type <code>npm start</code> or <code>nodemon</code> in terminal to run on browser</li>
+    <li>Type <code>npm start</code> or <code>nodemon</code> in terminal to run on browser</li>
 </ol>
 
 ## Technologies
 
+- JavaScript
 - jQuery
 - Node.js
 - Express.js
 - SQL
 - ~~Bootstrap~~
-- Materializecss
+- Materialize CSS
 - Google Firebase
+- PostgreSQL
 
 ## Useful links
 https://materializecss.com/
 https://console.firebase.google.com/
+https://github.com/darrenrector91/gig-finder
 
 
 
