@@ -2,7 +2,7 @@
 
 <h2>Requirements to start using application</h2>
 <ol>
-    <li>Google account or an email is necessary to login to application</li>
+    <li>Google account or an email is necessary to login into application</li>
     <li>In order to use application a Google Firebase account will need to be setup, this is used for Firebase Storage</li>
 </ol>
 
