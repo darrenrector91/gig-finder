@@ -8,8 +8,8 @@
 
 <h2>Steps to launch app</h2>
 <ol>
-    <li>Using terminal type npm install --save for required dependencies</li>
-    <li>While in terminal also npm install nodemon --save-dev </li>
+    <li>Using terminal type <code>npm install --save</code> for required dependencies</li>
+    <li>While in terminal also <code>npm install nodemon --save-dev</code> </li>
     <li>Start database server</li>
     <li>Spin up Postico</li>
     <li>Create new database</li>
